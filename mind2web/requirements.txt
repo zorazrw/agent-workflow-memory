@@ -1,0 +1,7 @@
+tqdm
+numpy
+openai
+backoff==2.2.1
+tiktoken
+lxml==4.9.3
+matplotlib

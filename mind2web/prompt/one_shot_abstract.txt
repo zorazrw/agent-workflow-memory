@@ -1,0 +1,89 @@
+Website: Travel, Airlines, delta
+## Query 1: Find flights from Seattle to New York on June 5th and only show those that can be purchased with miles.
+Actions:
+[link]  From Departure Airport or City Your Origin -> CLICK
+[textbox]  Origin City or Airport -> TYPE: Seattle
+[link]  SEA Seattle, WA -> CLICK
+[link]  To Destination Airport or City Your Destination -> CLICK
+[textbox]  Destination City or Airport -> TYPE: New York
+[link]  NYC New York City Area Airports, NY -> CLICK
+[combobox]  Trip Type:, changes will reload the page -> CLICK
+[option]  One Way -> CLICK
+[button]   Depart and Return Calendar Use enter to open, es... -> CLICK
+[link]  Next -> CLICK
+[link]  5 June 2023, Monday -> CLICK
+[button]  done -> CLICK
+[label]  Shop with Miles -> CLICK
+[button]   SUBMIT -> CLICK
+
+## Query 2: Find my trip with confirmation number SFTBAO including first and last name Joe Lukeman
+Actions:
+[tab]  MY TRIPS -> CLICK
+[combobox]  Find Your Trip By -> CLICK
+[option]  Confirmation Number -> CLICK
+[input]   -> TYPE: SFTBAO
+[input]   -> TYPE: Joe
+[input]   -> TYPE: Lukeman
+[button]   SUBMIT -> CLICK
+
+## Query 3: Find the status of March 25 flights from New York airports to Columbus in Ohio.
+Actions:
+[tab]  FLIGHT STATUS -> CLICK
+[button]   Search by date required selected as 19 March 202... -> CLICK
+[link]  25 March 2023, Saturday -> CLICK
+[button]  done -> CLICK
+[link]  Depart City required From -> CLICK
+[textbox]  Origin City or Airport -> TYPE: New York
+[link]  NYC New York City Area Airports, NY -> CLICK
+[link]  Arrival City required To -> CLICK
+[textbox]  Destination City or Airport -> TYPE: Columbus
+[li]  CMH -> CLICK
+[button]   SUBMIT -> CLICK
+
+## Query 4: Check all available one way flights for a single passenger from Manhattan to Philadelphia on May 23rd in first class.
+Actions:
+[link]  From Departure Airport or City Your Origin -> CLICK
+[textbox]  Origin City or Airport -> TYPE: Manhattan
+[link]  MHK Manhattan Regl, USA -> CLICK
+[link]  To Destination Airport or City Your Destination -> CLICK
+[textbox]  Destination City or Airport -> TYPE: Philadelphia
+[link]  PHL Philadelphia, PA -> CLICK
+[combobox]  Trip Type:, changes will reload the page -> CLICK
+[option]  One Way -> CLICK
+[button]   Depart and Return Calendar Use enter to open, es... -> CLICK
+[link]  23 March 2023, Thursday -> CLICK
+[button]  done -> CLICK
+[link]   Advanced Search -> CLICK
+[combobox]  Best Fares For -> CLICK
+[option]  First Class -> CLICK
+[button]   SUBMIT -> CLICK
+
+Extracted Workflows:
+# enter_flight_locations
+Given that you are on the Delta flight booking page, this workflow enters the departure and destination city/airport for your flight.
+[link]  {link to enter departure city} -> CLICK
+[textbox]  {textbox to input departure city} -> TYPE: {your-origin-city}
+[link]  {best-popup-option} -> CLICK
+[link]  {link to enter destination city} -> CLICK
+[textbox]  {textbox to enter destination city} -> TYPE: {your-destination-city}
+[link]  {best-popup-option} -> CLICK
+
+# select_oneway_trip
+Given that you are on the Delta flight booking page, this workflow changes the flight to be one-way.
+[combobox]  {option to select trip type} -> CLICK
+[option]  One Way -> CLICK
+
+# select_date_for_travel
+Given that you are on the Delta flight booking page, this workflow selects the travel date.
+[button] {calendar to select flight dates} -> CLICK
+[link]  {travel-date} -> CLICK
+[button]  done -> CLICK
+
+# find_trip
+Given that you are on the Delta flight searching page, this workflow finds a trip with the confirmation number and passenger name.
+[tab]  MY TRIPS -> CLICK
+[combobox]  {button to instantiate search} -> CLICK
+[option]  Confirmation Number -> CLICK
+[input]   -> TYPE: {confirmation-number}
+[input]   -> TYPE: {passenger-name}
+[button]   SUBMIT -> CLICK
