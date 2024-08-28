@@ -1,0 +1,12 @@
+openai
+requests
+pillow
+bs4
+matplotlib
+termcolor
+human_id
+pandas
+easy_ocr
+einops
+transformers_stream_generator
+tiktoken
