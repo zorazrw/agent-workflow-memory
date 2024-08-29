@@ -37,7 +37,7 @@ We achieve the state-of-the-art result -- 35.6% success rate.
 
 <p align="center">
   <a href="https://zorazrw/agent-task-memory/">
-    <img src="assets/webarena-bars.jpg" width="100%" />
+    <img src="assets/webarena-leaderboard.jpg" width="70%" />
   </a>
 </p>
 
