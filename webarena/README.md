@@ -85,7 +85,8 @@ Change the `model` and `prompt` format options if necessary.
 **Step 3**. Integrate the trajectory workflows to agent memory
 
 ```bash
-python workflow_induction.py --results_dir results/shopping
+python induce_rule.py --results_dir results/shopping
+# or `induce_prompt.py` for neural-based induction
 ```
 
 Switch the `criteria` to "gt" (and can skip step 2) if you want to use ground-truth reward as signals to integrate workflows.

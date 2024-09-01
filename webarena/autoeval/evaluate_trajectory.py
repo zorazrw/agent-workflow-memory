@@ -92,7 +92,7 @@ def process_sample(
 
 def main():
     # load task config
-    task_id = args.result_dir.split('/')[-1].split("_")[0].split(".")[1]
+    task_id = args.result_dir.split('/')[-1].split(".")[1]
     config_path = os.path.join("config_files", f"{task_id}.json")
     config = json.load(open(config_path))
 

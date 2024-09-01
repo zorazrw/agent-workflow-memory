@@ -45,7 +45,7 @@ def parse_args():
         help="Starting URL (only for the openended task).",
     )
     parser.add_argument(
-        "--slow_mo", type=int, default=500, help="Slow motion delay for the playwright actions."
+        "--slow_mo", type=int, default=30, help="Slow motion delay for the playwright actions."
     )
     parser.add_argument(
         "--headless",
@@ -119,7 +119,7 @@ WARNING this demo agent will soon be moved elsewhere. Expect it to be removed at
     )
 
     args = parse_args()
-    if args.workflow_path is not None:
+    if (args.workflow_path is not None) and (not os.path.exists(args.workflow_path)):
         open(args.workflow_path, "w").close()
 
     env_args = EnvArgs(
