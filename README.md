@@ -8,11 +8,13 @@
   </a>
 </div>
 
-Code for ["Agent Workflow Memory"](paper-arxiv-link). Check the READMEs under `./webarena/` and `./mind2web/` to find specific instructions on reproducing the experiments.
+Code for ["Agent Workflow Memory"](paper-arxiv-link). 
+
+Check the READMEs under `./webarena/` and `./mind2web/` to find specific instructions on reproducing the experiments.
 
 <p align="center">
   <a href="https://zorazrw/agent-workflow-memory/">
-    <img src="assets/teaser.jpg" width="90%" />
+    <img src="assets/teaser.jpg" width="80%" />
   </a>
 </p>
 
