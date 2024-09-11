@@ -11,14 +11,16 @@
 ## Quickstart :boom:
 To run AWM on WebArena under `webarena/`: 
 ```bash
+cd webarena
 python pipeline.py --website "shopping" # choose one from ['shopping', 'shopping_admin', 'reddit', 'gitlab', 'map']
 ```
 
 To run AWM on Mind2Web under `mind2web/`:
 ```bash
+cd mind2web
 python pipeline.py --setup "offline" # or "online"
 ```
-Check respective folders for more detailed instructions about environment and data setups.
+Check `webarena/` and `mind2web/` folders for more detailed instructions about environment and data setups.
 
 ## What is Agent Workflow Memory? 🧠
 Agent Workflow Memory (ATW) proposes to induce, integrate, and utilize workflows to the agent memory.
