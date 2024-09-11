@@ -20,7 +20,7 @@ python pipeline.py --setup "offline" # or "online"
 ```
 Check respective folders for more detailed instructions about environment and data setups.
 
-## 🧠 What is Agent Workflow Memory?
+## What is Agent Workflow Memory? 🧠
 Agent Workflow Memory (ATW) proposes to induce, integrate, and utilize workflows to the agent memory.
 A workflow is usually a common sub-routine in solving tasks, with example-specific contexts being abstracted out.
 
@@ -40,7 +40,7 @@ ATM can operate in both offline and online settings:
   </a>
 </p>
 
-## 📈 How does ATM work?
+## How does ATM work? 📈
 
 ### On WebArena
 We achieve the state-of-the-art result -- 35.6% success rate.
@@ -65,7 +65,7 @@ We also get the best scores among text-based agents. Particularly, ATM offline e
 
 Check the code in `./mind2web/` directory.
 
-## 📜 Citation
+## Citation 📜 
 
 ```bibtex
 @inproceedings{awm2024wang,
