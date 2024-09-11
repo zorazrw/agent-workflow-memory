@@ -18,6 +18,7 @@ To run AWM on Mind2Web under `mind2web/`:
 ```bash
 python pipeline.py --setup "offline" # or "online"
 ```
+Check respective folders for more detailed instructions about environment and data setups.
 
 ## 🧠 What is Agent Workflow Memory?
 Agent Workflow Memory (ATW) proposes to induce, integrate, and utilize workflows to the agent memory.
