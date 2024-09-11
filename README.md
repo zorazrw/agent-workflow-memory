@@ -8,19 +8,26 @@
   </a>
 </div>
 
-Code for ["Agent Workflow Memory"](paper-arxiv-link). 
+## Quickstart :boom:
+To run AWM on WebArena under `webarena/`: 
+```bash
+python pipeline.py --website "shopping" # choose one from ['shopping', 'shopping_admin', 'reddit', 'gitlab', 'map']
+```
 
-Check the READMEs under `./webarena/` and `./mind2web/` to find specific instructions on reproducing the experiments.
-
-<p align="center">
-  <a href="https://zorazrw/agent-workflow-memory/">
-    <img src="assets/teaser.jpg" width="80%" />
-  </a>
-</p>
+To run AWM on Mind2Web under `mind2web/`:
+```bash
+python pipeline.py --setup "offline" # or "online"
+```
 
 ## 🧠 What is Agent Workflow Memory?
 Agent Workflow Memory (ATW) proposes to induce, integrate, and utilize workflows to the agent memory.
 A workflow is usually a common sub-routine in solving tasks, with example-specific contexts being abstracted out.
+
+<p align="center">
+  <a href="https://zorazrw/agent-workflow-memory/">
+    <img src="assets/teaser.jpg" width="60%" />
+  </a>
+</p>
 
 ATM can operate in both offline and online settings:
 - *offline* (left): when additional (e.g., training) examples are available, agents induce workflows from ground-truth annotated examples
@@ -28,7 +35,7 @@ ATM can operate in both offline and online settings:
 
 <p align="center">
   <a href="https://zorazrw/agent-workflow-memory/">
-    <img src="assets/online-offline.jpg" width="100%" />
+    <img src="assets/online-offline.jpg" width="90%" />
   </a>
 </p>
 
