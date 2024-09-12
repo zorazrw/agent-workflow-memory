@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Agent Workflow Memory </h1>
-  <a href="https://img.shields.io/badge/arXiv-240x.xxxx-b31b1b.svg">
-    <img src="https://img.shields.io/badge/arXiv-240x.xxxx-b31b1b.svg" alt="arXiv">
+  <a href="https://arxiv.org/abs/2409.07429">
+    <img src="https://img.shields.io/badge/arXiv-2409.07429-b31b1b.svg" alt="arXiv">
   </a>
   <a href="https://img.shields.io/badge/PRs-Welcome-red">
     <img src="https://img.shields.io/badge/PRs-Welcome-yellow" alt="PRs Welcome">
@@ -73,8 +73,7 @@ Check the code in `./mind2web/` directory.
 @inproceedings{awm2024wang,
   title = {Agent Workflow Memory},
   author = {Wang, Zhiruo anf Mao, Jiayuan, and Fried, Daniel and Neubig, Graham},
-  booktitle = {TBA},
+  journal={arXiv preprint arXiv:2409.07429},
   year = {2024},
-  url = {TBA},
 }
 ```
