@@ -33,7 +33,7 @@ def main():
 
         # step 3: update workflow
         process = Popen([
-            "python", "workflow_induction.py",
+            "python", "induce_prompt.py",
             "--result_dir", "results",
             "--output_path", f"workflow/{args.website}.txt",
         ])
