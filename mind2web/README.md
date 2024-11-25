@@ -6,7 +6,7 @@
 pip install -r requirements.txt
 ```
 
-Download data from the [mind2web](https://github.com/OSU-NLP-Group/Mind2Web) project, make sure you have `test_task`, `test_website`, `test_domain`, and `train` under the `data` directory.
+Download data from the [mind2web](https://github.com/OSU-NLP-Group/Mind2Web) project, make sure you have `test_task`, `test_website`, `test_domain`, and `train` under the `data` directory; download `scores_all_data.pkl` for HTML filtering at [[link]](https://buckeyemailosu-my.sharepoint.com/personal/deng_595_buckeyemail_osu_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdeng%5F595%5Fbuckeyemail%5Fosu%5Fedu%2FDocuments%2FMind2Web%2Fscores%5Fall%5Fdata%2Epkl&parent=%2Fpersonal%2Fdeng%5F595%5Fbuckeyemail%5Fosu%5Fedu%2FDocuments%2FMind2Web&ga=1).
 
 ## Offline Workflow Induction + Test Inference
 
